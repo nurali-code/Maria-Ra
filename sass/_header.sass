@@ -106,7 +106,7 @@
                 visibility: visible
                 opacity: 1
                 transform: translateX(0%)
-            
+
             &::before
                 content: ''
                 display: block
@@ -203,5 +203,24 @@ footer
             color: #717171
             text-decoration: underline
             margin-right: 16px
+
+    @media screen and ( max-width: 710px )
+        .cs
+            max-width: 400px
+            margin: 0 auto 
+            display: block
+            padding: 21px 14px 7px
+            a 
+                margin-bottom: 12px
+        p 
+            a 
+                display: block
+
+    @media screen and ( max-width: 500px )
+        .logo
+            margin: 17px 0 15px 
+        p 
+            text-align: left !important
+            font-size: 12px
 .center
     text-align: center
