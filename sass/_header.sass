@@ -6,8 +6,8 @@
         img
             display: block
 
-    nav
-        a
+    .nav
+        &__link
             display: inline-block
             font-size: 14px
             font-style: normal
@@ -15,10 +15,139 @@
             color: #717171
             padding: 5px 16px
 
+        @media screen and ( min-width: 880px )
+            .cs
+                display: none
+
     &-main
         width: 100%
         justify-content: space-between
         margin: 30px 0
+
+    .tg
+        display: none
+
+    .btn
+        &-menu
+            display: none
+
+    @media screen and ( max-width: 1100px )
+        .btn
+            display: none
+            &-menu
+                position: relative
+                z-index: 99999
+                display: inline-block
+                width: 30px
+                height: 40px
+                span
+                    width: 16px
+                    display: block
+                    height: 1px
+                    border-radius: 1px
+                    background-color: #242424
+                    position: relative
+                    transition: all ease .3s
+                    &::before,
+                    &::after
+                        width: 20px
+                        border-radius: 1px
+                        content: ''
+                        display: block
+                        height: 1px
+                        background-color: #242424
+                        position: absolute
+                        top: -5px
+                        transition: all ease .3s
+                    &::after
+                        width: 11px
+                        top: 5px
+
+                &.active
+                    span
+                        opacity: 1
+                        background-color: transparent
+                        &::before
+                            top: 0
+                            transform: rotate(45deg)
+                            width: 25px
+                        &::after
+                            top: 0
+                            width: 25px
+                            left: 0
+                            transform: rotate(-45deg)
+
+        .tg
+            display: inline-block
+            text-align: right
+            width: 30px
+            img
+                display: block
+                margin-left: auto
+
+        .nav
+            width: 100%
+            height: 100%
+            padding: 70px 15px 20px
+            height: 100dvh
+            flex-direction: column
+            text-align: left
+            align-items: flex-start
+            justify-content: flex-start
+            background-color: rgba(0, 0, 0, .6)
+            position: fixed
+            top: 0
+            left: 0
+            z-index: 9999
+            visibility: hidden
+            opacity: 0
+            transform: translateX(-100%)
+            &.active
+                visibility: visible
+                opacity: 1
+                transform: translateX(0%)
+            
+            &::before
+                content: ''
+                display: block
+                width: 85%
+                max-width: 290px
+                height: 100%
+                top: 0
+                left: 0
+                position: absolute
+                z-index: -11111
+                background-color: #fff
+                pointer-events: none
+
+            &__link
+                width: 80%
+                max-width: 250px
+                display: block
+                padding: 10px
+
+    @media screen and ( max-width: 880px )
+        padding: 15px 15px 18px
+        &-top
+            display: none !important
+
+        &-main
+            margin: 0
+
+        .logo
+            max-width: 170px
+
+        .cs
+            gap: 10px
+            margin-top: auto
+            width: 83%
+            max-width: 255px
+            display: block
+            padding: 20px 10px 15px
+            &_item
+                gap: 7px
+                margin: 0 4px 10px
+                color: #fff
 
 .cs,
 .cs-soc,
@@ -56,7 +185,7 @@ footer
     padding: 22px 0
     .cs
         border-radius: 12px
-        padding: 18px 24px 19px
+        padding: 18px 24px
     p
         color: #717171
         font-size: 14px

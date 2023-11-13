@@ -18,7 +18,7 @@
 <body>
 
     <header class="header container">
-        <div class="cs df">
+        <div class="header-top cs df">
             <span class="cs_item df"><img src="img/location.svg" alt="Барнаул">Барнаул</span>
             <a class="cs_item df" href="#"><img src="img/mail.svg" alt="mail">rabota@maria-ra.ru</a>
             <a class="cs_item df" href="tel:+88007755999"><img src="img/phone.svg" alt="phone">8 800 77 55 999 - Единый
@@ -30,21 +30,37 @@
             </div>
         </div>
         <div class="header-main df">
+            <button class="btn-menu"><span></span></button>
             <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
-            <nav class="df">
-                <a href="#">О компании</a>
-                <a href="#">Оставить заявку</a>
-                <a href="#">Работа в Мария-Ра</a>
-                <a href="#">Преимущества</a>
-                <a href="#">Контакты</a>
+            <nav class="df nav">
+                <a class="nav__link" href="#">О компании</a>
+                <a class="nav__link" href="#">Оставить заявку</a>
+                <a class="nav__link" href="#">Работа в Мария-Ра</a>
+                <a class="nav__link" href="#">Преимущества</a>
+                <a class="nav__link" href="#">Контакты</a>
+
+                <span class="cs df">
+                    <span class="cs_item df"><img src="img/location.svg" alt="Барнаул">Барнаул</span>
+                    <a class="cs_item df" href="#"><img src="img/mail.svg" alt="mail">rabota@maria-ra.ru</a>
+                    <a class="cs_item df" href="tel:+88007755999"><img src="img/phone.svg" alt="phone">8 800 77 55 999 -
+                        Единый
+                        номер службы подбора персонала</a>
+                    <span class="cs-soc df">
+                        <a href="#"><img src="img/Vkontakte.svg" alt="Vkontakte"></a>
+                        <a href="#"><img src="img/Telegram.svg" alt="Telegram"></a>
+                        <a href="#"><img src="img/YouTube.svg" alt="YouTube"></a>
+                    </span>
+                </span>
+
             </nav>
+            <a href="#" class="tg"><img src="img/tg.svg" alt="tg"></a>
             <a href="#" class="btn">Связаться с нами</a>
         </div>
     </header>
 
     <main class="hero">
-        <div class="container d-flex">
-            <form>
+        <div class="container wrap">
+            <form class="hero-form">
                 <h1>
                     Заполни анкету, <br>
                     мы тебе перезвоним!
@@ -131,59 +147,100 @@
             <div class="direction-item">
                 <h3 class="direction__heading">Работа в офисе</h3>
                 <p class="wrap">
-                    <span class="tag">HR-специалист</span>
-                    <span class="tag">Бухгалтер</span>
-                    <span class="tag">Аналитик</span>
-                    <span class="tag">Программист</span>
-                    <span class="tag">IT-специалист</span>
-                    <span class="tag">Другие</span>
-                    <span class="tag">Экономист</span>
+                    <a href="https://hh.ru/" target="_blank" class="tag">HR-специалист</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Бухгалтер</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Аналитик</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Программист</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">IT-специалист</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Другие</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Экономист</a>
                 </p>
                 <img src="img/item_1.png" class="direction__img" alt="item" loading="lazy">
             </div>
             <div class="direction-item">
                 <h3 class="direction__heading">Работа в магазине</h3>
                 <p class="wrap">
-                    <span class="tag">Продавец гастрономии</span>
-                    <span class="tag">Кассир-продавец</span>
-                    <span class="tag">Бариста</span>
-                    <span class="tag">Консультант КСО</span>
-                    <span class="tag">Другие</span>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Продавец гастрономии</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Кассир-продавец</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Бариста</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Консультант КСО</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Другие</a>
                 </p>
                 <img src="img/item_2.png" class="direction__img" alt="item" loading="lazy">
             </div>
             <div class="direction-item">
                 <h3 class="direction__heading">Управление магазином</h3>
                 <p class="wrap">
-                    <span class="tag">Региональный директор</span>
-                    <span class="tag">Директор магазина</span>
-                    <span class="tag">Заместитель директора магазина</span>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Региональный директор</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Директор магазина</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Заместитель директора магазина</a>
                 </p>
                 <img src="img/item_3.png" class="direction__img" alt="item" loading="lazy">
             </div>
             <div class="direction-item">
                 <h3 class="direction__heading">Работа на складе</h3>
                 <p class="wrap">
-                    <span class="tag">Грузчик</span>
-                    <span class="tag">Наборщик</span>
-                    <span class="tag">Ревизор</span>
-                    <span class="tag">Менеджер по качеству</span>
-                    <span class="tag">Кладовщик</span>
-                    <span class="tag">Водитель-погрузчика</span>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Грузчик</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Наборщик</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Ревизор</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Менеджер по качеству</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Кладовщик</a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Водитель-погрузчика</a>
                 </p>
                 <img src="img/item_4.png" class="direction__img" alt="item" loading="lazy">
             </div>
             <div class="direction-item">
                 <h3 class="direction__heading">Транспортная логистика</h3>
                 <p class="wrap">
-                    <span class="tag">Водитель с категорией C </span>
-                    <span class="tag">Водитель с категорией E </span>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Водитель с категорией C </a>
+                    <a href="https://hh.ru/" target="_blank" class="tag">Водитель с категорией E </a>
                 </p>
                 <img src="img/item_5.png" class="direction__img" alt="item" loading="lazy">
             </div>
             <div class="direction-flow">
                 <img src="img/logo.png" alt="item" loading="lazy">
                 <a href="#" class="btn">Узнать подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="win">
+        <div class="container">
+            <h2>В чем выгода трудоустройства в «Мария-Ра»?</h2>
+            <div class="wrap">
+                <div class="win-item">
+                    <img src="img/noodle.png" alt="noodle" loading="lazy" class="win__img">
+                    <div class="win-title">
+                        <h3 class="win__heading">Горячее питание</h3>
+                        <p class="win__text">Мы заботимся о Ваших ежедневных нуждах, предоставляя бесплатные комплексные обеды</p>
+                    </div>
+                    <img src="img/win_bg_1.svg" alt="img" loading="lazy" class="win__bg">
+                </div>
+                <div class="win-item">
+                    <img src="img/card.png" alt="noodle" loading="lazy" class="win__img">
+                    <div class="win-title">
+                        <h3 class="win__heading">Карта лояльности сотрудника</h3>
+                        <p class="win__text">Скидка 10% во всех магазинах сети</p>
+                    </div>
+                    <img src="img/win_bg_2.svg" alt="img" loading="lazy" class="win__bg">
+                </div>
+                <div class="win-item">
+                    <img src="img/wallet.png" alt="wallet" loading="lazy" class="win__img">
+                    <div class="win-title">
+                        <h3 class="win__heading">Поддержка целеустремленных 
+                            сотрудников</h3>
+                        <p class="win__text">Карьерное продвижение, личностный рост</p>
+                    </div>
+                    <img src="img/win_bg_1.svg" alt="img" loading="lazy" class="win__bg">
+                </div>
+                <div class="win-item">
+                    <img src="img/dynamic.png" alt="dynamic" loading="lazy" class="win__img">
+                    <div class="win-title">
+                        <h3 class="win__heading">Стабильная заработная плата</h3>
+                        <p class="win__text">Официальные выплаты 2 раза в месяц</p>
+                    </div>
+                    <img src="img/win_bg_2.svg" alt="img" loading="lazy" class="win__bg">
+                </div>
             </div>
         </div>
     </section>
