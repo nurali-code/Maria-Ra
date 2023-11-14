@@ -24,20 +24,20 @@
             <a class="cs_item df" href="tel:+88007755999"><img src="img/phone.svg" alt="phone">8 800 77 55 999 - Единый
                 номер службы подбора персонала</a>
             <div class="cs-soc df">
-                <a href="#"><img src="img/Vkontakte.svg" alt="Vkontakte"></a>
-                <a href="#"><img src="img/Telegram.svg" alt="Telegram"></a>
-                <a href="#"><img src="img/YouTube.svg" alt="YouTube"></a>
+                <a href="#" target="_blank"><img src="img/Vkontakte.svg" alt="Vkontakte"></a>
+                <a href="#" target="_blank"><img src="img/Telegram.svg" alt="Telegram"></a>
+                <a href="#" target="_blank"><img src="img/YouTube.svg" alt="YouTube"></a>
             </div>
         </div>
         <div class="header-main df">
             <button class="btn-menu"><span></span></button>
             <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
             <nav class="df nav">
-                <a class="nav__link" href="#">О компании</a>
-                <a class="nav__link" href="#">Оставить заявку</a>
-                <a class="nav__link" href="#">Работа в Мария-Ра</a>
-                <a class="nav__link" href="#">Преимущества</a>
-                <a class="nav__link" href="#">Контакты</a>
+                <a class="nav__link" href="#about">О компании</a>
+                <button class="nav__link btnModal" data-modal="modal">Оставить заявку</button>
+                <a class="nav__link" href="#direction">Работа в Мария-Ра</a>
+                <a class="nav__link" href="#win">Преимущества</a>
+                <a class="nav__link" href="#footer">Контакты</a>
 
                 <span class="cs df">
                     <span class="cs_item df"><img src="img/location.svg" alt="Барнаул">Барнаул</span>
@@ -46,15 +46,15 @@
                         Единый
                         номер службы подбора персонала</a>
                     <span class="cs-soc df">
-                        <a href="#"><img src="img/Vkontakte.svg" alt="Vkontakte"></a>
-                        <a href="#"><img src="img/Telegram.svg" alt="Telegram"></a>
-                        <a href="#"><img src="img/YouTube.svg" alt="YouTube"></a>
+                        <a href="#" target="_blank"><img src="img/Vkontakte.svg" alt="Vkontakte"></a>
+                        <a href="#" target="_blank"><img src="img/Telegram.svg" alt="Telegram"></a>
+                        <a href="#" target="_blank"><img src="img/YouTube.svg" alt="YouTube"></a>
                     </span>
                 </span>
 
             </nav>
             <a href="#" class="tg"><img src="img/tg.svg" alt="tg"></a>
-            <a href="#" class="btn">Связаться с нами</a>
+            <button class="btn" data-modal="modal">Связаться с нами</button>
         </div>
     </header>
 
@@ -207,7 +207,7 @@
         </div>
     </section>
 
-    <section class="win">
+    <section class="win" id="win">
         <div class="container">
             <h2>В чем выгода трудоустройства <span class="nowrap">в «Мария-Ра»?</span></h2>
             <div class="wrap">
@@ -430,7 +430,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="cs df">
                 <a class="cs_item df" href="#"><img src="img/mail.svg" alt="mail">rabota@maria-ra.ru</a>
@@ -438,9 +438,9 @@
                     Единый
                     номер службы подбора персонала</a>
                 <div class="cs-soc df">
-                    <a href="#"><img src="img/Vkontakte.svg" alt="Vkontakte"></a>
-                    <a href="#"><img src="img/Telegram.svg" alt="Telegram"></a>
-                    <a href="#"><img src="img/YouTube.svg" alt="YouTube"></a>
+                    <a href="#" target="_blank"><img src="img/Vkontakte.svg" alt="Vkontakte"></a>
+                    <a href="#" target="_blank"><img src="img/Telegram.svg" alt="Telegram"></a>
+                    <a href="#" target="_blank"><img src="img/YouTube.svg" alt="YouTube"></a>
                 </div>
             </div>
             <p class="center">
@@ -450,6 +450,40 @@
             </p>
         </div>
     </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3 class="h1">
+                Заполни анкету, <br>
+                мы тебе перезвоним!
+            </h3>
+            <form>
+                <input type="text" placeholder="Имя" required>
+                <input type="text" placeholder="Фамилия" required>
+                <input type="text" placeholder="Номер телефона" required>
+                <select name="city" id="city">
+                    <option value="Барнаул" selected>Барнаул</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Новосибирск">Новосибирск</option>
+                    <option value="Екатеринбург">Екатеринбург</option>
+                    <option value="Нижний Новгород">Нижний Новгород</option>
+                    <option value="Казань">Казань</option>
+                    <option value="Челябинск">Челябинск</option>
+                    <option value="Омск">Омск</option>
+                    <option value="Самара">Самара</option>
+                    <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                </select>
+                <button type="submit" class="btn">Отправить</button>
+                <div class="check">
+                    <input type="checkbox" required id="check">
+                    <label for="check">Я даю согласие на обработку персональных данных и подтверждаю, что мне есть 18
+                        лет</label>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
