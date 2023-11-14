@@ -27,5 +27,13 @@ $(document).ready(function () {
         ]
     });
 
+    $('.dropdown-btn').on('click', function (e) {
+        if ($(this).hasClass('active')) { $('.dropdown-btn').removeClass('active').next().slideUp(); }
+        else {
+            $('.dropdown-btn').removeClass('active').next().slideUp();
+            $(this).toggleClass('active').next().slideToggle();
+        }
+    });
+
 });
 

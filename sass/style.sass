@@ -404,6 +404,7 @@
     border-radius: 18px
     border: 1px solid rgba(233, 233, 233, 0.50)
     color: #5B5B5B
+    background-color: #fff
     margin-bottom: 18px
     &-btn
         font-size: 16px
@@ -432,13 +433,13 @@
         &:active
             transform: scale(.99)
 
+        &.active
+            &::after
+                transform: translateY(-50%) rotate(180deg)
+
     &.active
-        .dropdown
-            &-btn
-                &::after
-                    transform: translateY(-50%) rotate(180deg)
-            &-content
-                display: block
+        .dropdown-content
+            display: block
 
     &-content
         display: none
@@ -601,7 +602,7 @@
             border-radius: 12px
 
     .direction
-        h2 
+        h2
             margin-bottom: 14px
         &-item
             padding: 13px 18px
