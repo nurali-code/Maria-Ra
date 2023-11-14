@@ -111,6 +111,28 @@
         right: 88px
         transform: scale(-1) !important
 
+    &-dots
+        display: flex
+        align-items: center
+        justify-content: center
+        list-style: none
+        padding-top: 17px
+        li
+            padding: 6px
+            font-size: 0
+
+        button
+            width: 12px
+            border-radius: 50%
+            font-size: 0
+            height: 12px
+            margin: 0
+            background-color: #E0E0E0
+
+        .slick-active
+            button
+                background-color: #717171
+
     &-next
         right: 30px
 
@@ -120,17 +142,17 @@
         opacity: .5
 
     @media screen and ( max-width: 1100px )
-        &-prev 
+        &-prev
             left: 40px
-            right: auto 
-        &-next 
+            right: auto
+        &-next
             left: 90px
     @media screen and ( max-width: 700px )
-        &-prev 
+        &-prev
             left: 28px
-        &-next 
+        &-next
             left: 58px
-        &-arrow 
+        &-arrow
             width: 20px
             height: 20px
             bottom: 20px

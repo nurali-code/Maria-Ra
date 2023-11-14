@@ -10,5 +10,22 @@ $(document).ready(function () {
         centerMode: true,
     });
 
+    $('.direction-slider').slick({
+        arrows: false,
+        infinite: false,
+        dots: true,
+        speed: 600,
+        slidesToShow: 1,
+        centerPadding: '0px',
+        centerMode: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: "unslick",
+            },
+        ]
+    });
+
 });
 

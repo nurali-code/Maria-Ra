@@ -106,6 +106,10 @@
         gap: 10px
 
 .direction
+    .container
+        position: relative
+        z-index: 1
+
     h2
         width: 100%
         margin-bottom: 42px
@@ -138,10 +142,13 @@
             width: 100%
             height: 100%
             position: absolute
+            top: 0
+            left: 0
             z-index: -11
-            background-image: url('../img/bg_dots.svg')
+            background-image: url('../img/bg_dots.png')
             background-repeat: no-repeat
-            background-position: top 60px left
+            background-position: top left
+            background-size: contain
             mix-blend-mode: soft-light
             opacity: .2
 
@@ -157,7 +164,7 @@
             z-index: -1111
 
         .wrap
-            width: 64%
+            width: 76%
             max-width: 322px
             gap: 20px
             justify-content: flex-start
@@ -174,6 +181,7 @@
         text-align: center
         display: inline-block
         font-size: 15px
+        line-height: 130%
         font-style: normal
         font-weight: 400
         color: #5B5B5B
@@ -183,6 +191,9 @@
         box-shadow: 0px 0px 0.89673px 0px #FFF, 0px 0px 1.79346px 0px #FFF, 0px 0px 6.27711px 0px #FFF, 0px 0px 12.55423px 0px #FFF
 
     &-flow
+        position: absolute
+        bottom: 125px
+        right: 0
         width: 48%
         max-width: 583px
         text-align: center
@@ -265,7 +276,6 @@
         font-weight: 400
 
 .values
-
     &-item
         width: 32%
         border-radius: 24px
@@ -280,7 +290,7 @@
         @media screen and ( min-width: 1010px)
             transition: all ease .3s
             &:hover
-                transform: translateY(-20px)
+                transform: translateY(-10px)
 
         &::before
             content: ''
@@ -325,10 +335,12 @@
 .youth
     .wrap
         align-items: stretch
+
     img
         display: block
         object-fit: cover
         border-radius: 24px
+
     .col
         width: calc( 50% - 9px )
         .wrap
@@ -477,7 +489,7 @@
 
         &-form
             border-radius: 16px
-            width: 700px
+            width: 674px
             max-width: calc( 100vw - 30px )
             margin: 0 auto
 
@@ -504,8 +516,21 @@
                 width: calc( 50% - 6px )
                 order: 3
 
-    .direction,
-    .youth,
+    .youth
+        img
+            border-radius: 13px
+            width: calc(50% - 5px)
+
+        .col
+            width: calc(50% - 5px)
+            img
+                width: 100%
+
+            .wrap
+                margin-top: 10px
+                img
+                    width: calc(50% - 5px)
+
     .faq
         display: none
 
@@ -522,6 +547,25 @@
 
         &-item
             min-width: 400px
+
+    .direction
+        .container
+            padding: 0
+
+        h2
+            padding: 0 15px
+
+        &-flow
+            position: static
+            width: 100%
+            max-width: 100%
+            padding-top: 32px
+            img
+                display: none
+
+        &-item
+            max-width: 100%
+            margin: 0 15px
 
 @media screen and ( max-width: 700px )
     .hero
@@ -556,6 +600,27 @@
             padding: 12px 16px
             border-radius: 12px
 
+    .direction
+        h2 
+            margin-bottom: 14px
+        &-item
+            padding: 13px 18px
+            min-height: 210px
+            .wrap
+                gap: 12px
+                max-width: 225px
+
+        &__heading
+            font-size: 19px
+            font-style: normal
+            font-weight: 500
+            margin-bottom: 18px
+
+        .tag
+            padding: 6px 9px 5px
+            font-size: 10px
+            box-shadow: 0px 0px 0.55738px 0px #FFF, 0px 0px 1.11477px 0px #FFF, 0px 0px 3.90168px 0px #FFF, 0px 0px 7.80337px 0px #FFF
+
     .win
         &-item
             padding: 15px 10px
@@ -578,11 +643,16 @@
         &__text
             font-size: 12px
 
+    .youth
+        .col
+            width: 100%
+            margin-bottom: 10px
+
     .values
         .wrap
             width: 100%
             max-width: 500px
-            margin: 0 auto 
+            margin: 0 auto
             position: relative
             left: 0
             overflow-x: visible
