@@ -38,12 +38,13 @@
                 position: relative
                 z-index: 99999
                 display: inline-block
-                width: 30px
-                height: 40px
+                width: 50px
+                height: 50px
                 span
                     width: 16px
                     display: block
                     height: 1px
+                    margin: 0 auto
                     border-radius: 1px
                     background-color: #242424
                     position: relative
@@ -78,12 +79,14 @@
                             transform: rotate(-45deg)
 
         .tg
-            display: inline-block
+            display: inline-flex
+            align-items: center
+            justify-content: center
             text-align: right
-            width: 30px
+            width: 50px
+            height: 50px
             img
                 display: block
-                margin-left: auto
 
         .nav
             width: 100%
@@ -127,7 +130,7 @@
                 padding: 10px
 
     @media screen and ( max-width: 880px )
-        padding: 15px 15px 18px
+        padding: 15px 0 18px
         &-top
             display: none !important
 
@@ -206,20 +209,20 @@ footer
 
     @media screen and ( max-width: 710px )
         .cs
-            max-width: 400px
-            margin: 0 auto 
+            max-width: 600px
+            margin: 0 auto
             display: block
             padding: 21px 14px 7px
-            a 
+            a
                 margin-bottom: 12px
-        p 
-            a 
+        p
+            a
                 display: block
 
     @media screen and ( max-width: 500px )
         .logo
-            margin: 17px 0 15px 
-        p 
+            margin: 17px 0 15px
+        p
             text-align: left !important
             font-size: 12px
 .center
