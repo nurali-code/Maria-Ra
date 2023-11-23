@@ -72,17 +72,16 @@ $(document).ready(function () {
         });
     });
 
-    $('#youth_slider').slick({
+    $('.youth').slick({
         arrows: false,
-        infinite: true,
+        infinite: false,
         dots: false,
-        speed: 600,
         slidesToShow: 1,
+        speed: 600,
         centerPadding: '0px',
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
-        mobileFirst: true,
     });
 
 
