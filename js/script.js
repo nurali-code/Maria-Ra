@@ -72,6 +72,20 @@ $(document).ready(function () {
         });
     });
 
+    $('#youth_slider').slick({
+        arrows: false,
+        infinite: true,
+        dots: false,
+        speed: 600,
+        slidesToShow: 1,
+        centerPadding: '0px',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerMode: true,
+        mobileFirst: true,
+    });
+
+
     $('.btnPlay').on('click', function (e) {
         $(this).fadeOut();
         $(this).next('video')[0].play();

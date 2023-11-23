@@ -359,7 +359,7 @@
 
 .youth
     .wrap
-        align-items: stretch
+        align-items: center
 
     img
         display: block
@@ -372,6 +372,17 @@
             margin-top: 18px
             img
                 width: calc( 50% - 9px )
+    .slick
+        &-slider
+            overflow: hidden
+            margin: 0
+            width: 50%
+            border-radius: 24px
+            img
+                aspect-ratio: 1/1
+                
+        &-slide
+            margin: 0 9px
 
 .faq
     .wrap
@@ -686,7 +697,7 @@
     .video
         video
             border-radius: 16px
-        
+
         .btnPlay
             background-size: 18% auto
 
@@ -733,7 +744,7 @@
         overflow: hidden
         h2
             font-size: 32px
-       
+
         &__text
             max-width: 170px
 
