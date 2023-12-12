@@ -73,7 +73,7 @@ $(document).ready(function () {
     });
 
     $('.youth').slick({
-        arrows: false,
+        arrows: true,
         infinite: false,
         dots: false,
         slidesToShow: 1,

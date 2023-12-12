@@ -366,10 +366,29 @@
         z-index: -111
 
 .youth
+    overflow: hidden
     &-slide 
         display: none
         &:first-child
             display: block
+
+    .slick
+        &-arrow 
+            top: 50%
+
+        &-prev 
+            left: calc((100% - 1380px)/2)
+            right: auto
+        &-next 
+            left: auto 
+            right: calc((100% - 1380px)/2)
+        
+        @media screen and ( max-width: 1400px )
+            &-prev 
+                left: 15px
+            &-next 
+                right: 15px
+            
 
     .wrap
         align-items: stretch
@@ -384,8 +403,7 @@
         .wrap
             margin-top: 18px
             img
-                width: calc( 50% - 9px )
-                
+                width: calc( 50% - 9px )             
 
 .faq
     .wrap
