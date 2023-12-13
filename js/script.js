@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     $('.direction-slider').slick({
         arrows: false,
-        infinite: false,
+        infinite: true,
         dots: true,
         speed: 600,
         slidesToShow: 1,
