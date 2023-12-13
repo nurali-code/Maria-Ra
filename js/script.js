@@ -74,7 +74,7 @@ $(document).ready(function () {
 
     $('.youth').slick({
         arrows: true,
-        infinite: false,
+        infinite: true,
         dots: false,
         slidesToShow: 1,
         speed: 600,
