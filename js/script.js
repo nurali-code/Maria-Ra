@@ -99,5 +99,19 @@ $(document).ready(function () {
         }
     });
 
+    $("form").submit(function () {
+        // $('form .btn').addClass('loading');
+        $.ajax({
+            type: "post",
+            method: 'post',
+            url: "../sendmail.php",
+            data: $(this).serialize(),
+            // success: function (response) { alert(response); },
+            // error: function (error) { console.error(error); }
+        }).done(function () {
+            alert('Спасибо за заявку. Ожидайте с вами свяжется специалист!');
+        }); return false;
+    });
+
 });
 

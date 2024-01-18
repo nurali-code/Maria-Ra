@@ -67,14 +67,14 @@
 
     <main class="hero">
         <div class="container wrap">
-            <form class="hero-form">
+            <form action="./sendmail.php" method="post" class="hero-form">
                 <h1>
                     Заполни анкету, <br>
                     мы тебе перезвоним!
                 </h1>
-                <input type="text" placeholder="Имя" required>
-                <input type="text" placeholder="Фамилия" required>
-                <input type="text" placeholder="Номер телефона" required>
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="text" name="thuname" placeholder="Фамилия" required>
+                <input type="text" name="phone" placeholder="Номер телефона" required>
                 <select name="city" id="city">
                     <option value="Барнаул">Барнаул</option>
                     <option value="Алейск">Алейск</option>
@@ -113,7 +113,7 @@
                 <div class="hero-slide green">
                     <div class="hero-title">
                         <h3 class="hero__heading">Присоединяйся к семье Мария-ра!</h3>
-                        <p class="hero__text">Работа в магазине</p>
+                        <p class="hero__text">Работа в офисе</p>
                     </div>
                     <img src="img/main_4.png" alt="main">
                 </div>
@@ -142,7 +142,7 @@
                 </p>
                 <p class="about-item df">
                     <img src="img/shop.svg" alt="shop">
-                    1307 магазинов в 269 населенных пунктах
+                    1309 магазинов в 275 населенных пунктах
                 </p>
                 <p class="about-item df">
                     <img src="img/map.svg" alt="map">
@@ -675,53 +675,76 @@
                 <div class="direction-item">
                     <h3 class="direction__heading">Работа в офисе</h3>
                     <p class="wrap">
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">HR-специалист</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Бухгалтер</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Аналитик</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Программист</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">IT-специалист</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Другие</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Экономист</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">HR-специалист</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Бухгалтер</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Аналитик</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Программист</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">IT-специалист</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Другие</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Экономист</a>
                     </p>
                     <img src="img/item_1.png" class="direction__img" alt="item" loading="lazy">
                 </div>
                 <div class="direction-item">
                     <h3 class="direction__heading">Работа в магазине</h3>
                     <p class="wrap">
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Продавец гастрономии</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Кассир-продавец</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Бариста</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Консультант КСО</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Другие</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Продавец гастрономии</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Кассир-продавец</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Бариста</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Консультант КСО</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Другие</a>
                     </p>
                     <img src="img/item_2.png" class="direction__img" alt="item" loading="lazy">
                 </div>
                 <div class="direction-item">
                     <h3 class="direction__heading">Управление магазином</h3>
                     <p class="wrap">
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Региональный директор</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Директор магазина</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Заместитель директора магазина</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Региональный директор</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Директор магазина</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Заместитель директора магазина</a>
                     </p>
                     <img src="img/item_3.png" class="direction__img" alt="item" loading="lazy">
                 </div>
                 <div class="direction-item">
                     <h3 class="direction__heading">Работа на складе</h3>
                     <p class="wrap">
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Грузчик</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Наборщик</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Ревизор</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Менеджер по качеству</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Кладовщик</a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Водитель-погрузчика</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Грузчик</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Наборщик</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Ревизор</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Менеджер по качеству</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Кладовщик</a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Водитель-погрузчика</a>
                     </p>
                     <img src="img/item_4.png" class="direction__img" alt="item" loading="lazy">
                 </div>
                 <div class="direction-item">
                     <h3 class="direction__heading">Транспортная логистика</h3>
                     <p class="wrap">
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Водитель с категорией C </a>
-                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank" class="tag">Водитель с категорией E </a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Водитель с категорией C </a>
+                        <a href="https://barnaul.hh.ru/employer/57770?hhtmFrom=vacancy_search_list" target="_blank"
+                            class="tag">Водитель с категорией E </a>
                     </p>
                     <img src="img/item_5.png" class="direction__img" alt="item" loading="lazy">
                 </div>
@@ -1039,10 +1062,10 @@
                 Заполни анкету, <br>
                 мы тебе перезвоним!
             </h3>
-            <form>
-                <input type="text" placeholder="Имя" required>
-                <input type="text" placeholder="Фамилия" required>
-                <input type="text" placeholder="Номер телефона" required>
+            <form action="./sendmail.php" method="post">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="text" name="thuname" placeholder="Фамилия" required>
+                <input type="text" name="phone" placeholder="Номер телефона" required>
                 <select name="city" id="city">
                     <option value="Барнаул">Барнаул</option>
                     <option value="Алейск">Алейск</option>
